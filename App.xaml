@@ -1,0 +1,13 @@
+﻿<Application x:Class="MovieViewer.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:MovieViewer"
+             xmlns:View="clr-namespace:MovieViewer.View"
+             xmlns:ViewModel="clr-namespace:MovieViewer.ViewModel"
+             StartupUri="View/MovieViewer.xaml">
+    <Application.Resources>
+        <DataTemplate DataType="{x:Type ViewModel:MovieViewModel}">
+            <View:MovieViewer></View:MovieViewer>
+        </DataTemplate>
+    </Application.Resources>
+</Application>
